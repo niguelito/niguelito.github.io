@@ -37,7 +37,7 @@ export function GamePortal() {
           return (
             <Link
               key={game.id}
-              href={game.path}
+              onClick={() => window.location.href = game.path}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card/40 backdrop-blur-sm transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(61,153,245,0.2)]"
             >
               <div className="aspect-video w-full relative">
