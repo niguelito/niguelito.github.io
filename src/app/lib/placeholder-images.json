@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "math-trivia",
+      "description": "Mathematical symbols and abstract grid background",
+      "imageUrl": "https://picsum.photos/seed/math/600/400",
+      "imageHint": "mathematics grid"
+    },
+    {
+      "id": "income-sim",
+      "description": "Financial charts and neon currency symbols",
+      "imageUrl": "https://picsum.photos/seed/finance/600/400",
+      "imageHint": "financial chart"
+    },
+    {
+      "id": "tetris",
+      "description": "Geometric falling blocks in neon colors",
+      "imageUrl": "https://picsum.photos/seed/tetris/600/400",
+      "imageHint": "neon blocks"
+    },
+    {
+      "id": "casino",
+      "description": "Abstract slot machine or poker chips with glow",
+      "imageUrl": "https://picsum.photos/seed/casino/600/400",
+      "imageHint": "casino night"
+    },
+    {
+      "id": "impostor",
+      "description": "Futuristic space station corridor with red emergency lights",
+      "imageUrl": "https://picsum.photos/seed/space/600/400",
+      "imageHint": "spaceship corridor"
+    }
+  ]
+}
