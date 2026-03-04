@@ -1,58 +1,20 @@
 "use client"
 
-import React, { useState } from 'react';
-import { MathTrivia } from './MathTrivia';
-import { Button } from '@/components/ui/button';
-import { ArrowLeft, Coins, Ghost, LayoutGrid, Terminal } from 'lucide-react';
+import React from 'react';
+import { Coins, Ghost, LayoutGrid, Terminal } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-type GameId = 'math-trivia' | 'income-sim' | 'tetris' | 'casino' | 'impostor';
-
 const GAMES = [
-  { id: 'math-trivia', title: 'Math AI Trivia', icon: Terminal, color: 'text-primary' },
-  { id: 'income-sim', title: 'Income Simulator', icon: Coins, color: 'text-secondary' },
-  { id: 'tetris', title: 'Neon Tetris', icon: LayoutGrid, color: 'text-primary' },
-  { id: 'casino', title: 'Cyber Casino', icon: Coins, color: 'text-secondary' },
-  { id: 'impostor', title: 'Deep Space Impostor', icon: Ghost, color: 'text-destructive' },
+  { id: 'math-trivia', title: 'Math AI Trivia', icon: Terminal, color: 'text-primary', path: '/tryyourmath-but-better' },
+  { id: 'income-sim', title: 'Income Simulator', icon: Coins, color: 'text-secondary', path: '/income-simulator' },
+  { id: 'tetris', title: 'Neon Tetris', icon: LayoutGrid, color: 'text-primary', path: '/tetris' },
+  { id: 'casino', title: 'Cyber Casino', icon: Coins, color: 'text-secondary', path: '/casino-simulator' },
+  { id: 'impostor', title: 'Deep Space Impostor', icon: Ghost, color: 'text-destructive', path: '/imposter' },
 ] as const;
 
 export function GamePortal() {
-  const [activeGame, setActiveGame] = useState<GameId | null>(null);
-
-  if (activeGame === 'math-trivia') {
-    return (
-      <div className="container mx-auto px-4 py-12">
-        <Button 
-          variant="ghost" 
-          onClick={() => setActiveGame(null)} 
-          className="mb-8 gap-2 text-muted-foreground hover:text-primary"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Lobby
-        </Button>
-        <MathTrivia />
-      </div>
-    );
-  }
-
-  if (activeGame) {
-    return (
-      <div className="container mx-auto px-4 py-24 text-center">
-        <div className="mx-auto max-w-md space-y-6 rounded-2xl border-2 border-dashed border-primary/20 bg-muted/10 p-12">
-          <div className="flex justify-center">
-            <Terminal className="h-16 w-16 text-primary animate-pulse" />
-          </div>
-          <h2 className="text-3xl font-bold font-headline">{activeGame.toUpperCase()} Under Development</h2>
-          <p className="text-muted-foreground">This sector of Niguelito Hub is currently offline for maintenance. Please check out Math AI Trivia!</p>
-          <Button onClick={() => setActiveGame(null)} variant="outline" className="border-primary text-primary hover:bg-primary/10">
-            Return to Hub
-          </Button>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <section id="games" className="container mx-auto px-4 py-24">
       <div className="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
@@ -72,9 +34,9 @@ export function GamePortal() {
         {GAMES.map((game) => {
           const placeholder = PlaceHolderImages.find(p => p.id === game.id);
           return (
-            <button
+            <Link
               key={game.id}
-              onClick={() => setActiveGame(game.id)}
+              href={game.path}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card/40 backdrop-blur-sm transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(61,153,245,0.2)]"
             >
               <div className="aspect-video w-full relative">
@@ -101,7 +63,7 @@ export function GamePortal() {
                   Launch Game →
                 </div>
               </div>
-            </button>
+            </Link>
           );
         })}
       </div>
