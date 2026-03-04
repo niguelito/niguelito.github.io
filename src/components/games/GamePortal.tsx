@@ -1,18 +1,18 @@
 "use client"
 
 import React from 'react';
-import { Coins, Ghost, LayoutGrid, Terminal, LucideMessageCircleQuestion } from 'lucide-react';
+import { Coins, Ghost, LayoutGrid, Terminal, HelpCircle } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const GAMES = [
-  { id: 'math-trivia', title: 'Tryyourmath but better', icon: Terminal, color: 'text-primary', path: '/tryyourmath-but-better' },
+  { id: 'math-trivia', title: 'Math Trivia', icon: Terminal, color: 'text-primary', path: '/tryyourmath-but-better' },
   { id: 'income-sim', title: 'Income Simulator', icon: Coins, color: 'text-secondary', path: '/income-simulator' },
   { id: 'tetris', title: 'Tetris', icon: LayoutGrid, color: 'text-primary', path: '/tetris' },
   { id: 'casino', title: 'Cyber Casino', icon: Coins, color: 'text-secondary', path: '/casino-simulator' },
   { id: 'impostor', title: 'Impostor', icon: Ghost, color: 'text-destructive', path: '/imposter' },
-  { id: 'jeopardy', title: "MindVault Jeopardy", icon: LucideMessageCircleQuestion, color: 'text-primary', path: '/mindvault-jeopardy' }
+  { id: 'jeopardy', title: "MindVault Jeopardy", icon: HelpCircle, color: 'text-primary', path: '/mindvault-jeopardy' }
 ] as const;
 
 export function GamePortal() {
@@ -58,7 +58,7 @@ export function GamePortal() {
               <div className="p-6 text-left">
                 <h3 className="text-xl font-bold font-headline group-hover:text-primary transition-colors">{game.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
-                  Experience the next level of casual gaming in the hub.
+                  Launch the next generation of web-based gaming experiences.
                 </p>
                 <div className="mt-4 flex items-center text-xs font-semibold uppercase tracking-widest text-primary opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-2">
                   Launch Game →

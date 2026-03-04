@@ -1,4 +1,4 @@
-import { config } from 'dotenv';
-config();
-
-import '@/ai/flows/generate-math-trivia-question.ts';
+/**
+ * @fileOverview Dev entry point removed for client-only hub.
+ */
+export {};

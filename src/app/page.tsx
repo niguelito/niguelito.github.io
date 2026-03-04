@@ -33,7 +33,7 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              NEW: MATH AI TRIVIA NOW LIVE
+              NIGUELITO HUB NOW LIVE
             </div>
 
             <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl font-headline">
@@ -41,14 +41,16 @@ export default function Home() {
             </h1>
             
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              A futuristic portal to the most engaging mini-games on the web. Challenge your intellect, simulate your empire, and master the arcade.
+              A futuristic portal to the most engaging mini-games on the web. Explore your empire, master the arcade, and conquer the leaderboard.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Button size="lg" className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-white neon-blue-glow rounded-xl">
-                Explore Games
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="#games">
+                <Button size="lg" className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-white neon-blue-glow rounded-xl">
+                  Explore Games
+                  <ChevronRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="h-14 px-8 text-lg font-bold border-secondary text-secondary hover:bg-secondary/10 rounded-xl">
                 Learn More
               </Button>
@@ -57,9 +59,9 @@ export default function Home() {
             <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4 max-w-3xl mx-auto">
               {[
                 { label: 'Total Players', value: '12K+', icon: ShieldCheck },
-                { label: 'Games Active', value: '5', icon: PlayCircle },
-                { label: 'Daily Trivia', value: '800+', icon: Trophy },
-                { label: 'New Challenges', value: '24/7', icon: Rocket },
+                { label: 'Games Active', value: '6', icon: PlayCircle },
+                { label: 'Daily Visits', value: '800+', icon: Trophy },
+                { label: 'Uptime', value: '99.9%', icon: Rocket },
               ].map((stat, i) => (
                 <div key={i} className="flex flex-col items-center p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
                   <stat.icon className="h-5 w-5 text-primary mb-2" />
@@ -82,22 +84,22 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
                   <Terminal className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold font-headline">AI-Powered Gaming</h3>
-                <p className="text-muted-foreground text-sm">Experience dynamic gameplay where challenges are generated in real-time by cutting-edge AI.</p>
+                <h3 className="text-xl font-bold font-headline">Performance Optimized</h3>
+                <p className="text-muted-foreground text-sm">Lightning fast navigation and minimal UI designed for pure focus on the gaming experience.</p>
               </div>
               <div className="p-8 rounded-3xl bg-card border border-white/5 space-y-4">
                 <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
                   <LayoutGrid className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold font-headline">Seamless Interface</h3>
-                <p className="text-muted-foreground text-sm">Lightning fast navigation and minimal UI designed for pure focus on the gaming experience.</p>
+                <h3 className="text-xl font-bold font-headline">Modern Interface</h3>
+                <p className="text-muted-foreground text-sm">Experience a sleek, responsive dashboard built with the latest web technologies.</p>
               </div>
               <div className="p-8 rounded-3xl bg-card border border-white/5 space-y-4">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
                   <Trophy className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold font-headline">Global Leaderboards</h3>
-                <p className="text-muted-foreground text-sm">Compete with players worldwide and climb the ranks of the Niguelito ecosystem.</p>
+                <h3 className="text-xl font-bold font-headline">Global Access</h3>
+                <p className="text-muted-foreground text-sm">Access your favorite games from anywhere in the world on any device.</p>
               </div>
             </div>
           </div>
