@@ -35,9 +35,9 @@ export function GamePortal() {
         {GAMES.map((game) => {
           const placeholder = PlaceHolderImages.find(p => p.id === game.id);
           return (
-            <Link
+            <a
               key={game.id}
-              onClick={() => window.location.href = game.path}
+              href={game.path}
               className="group relative overflow-hidden rounded-2xl border border-white/10 bg-card/40 backdrop-blur-sm transition-all hover:-translate-y-2 hover:border-primary hover:shadow-[0_0_30px_rgba(61,153,245,0.2)]"
             >
               <div className="aspect-video w-full relative">
@@ -64,7 +64,7 @@ export function GamePortal() {
                   Launch Game →
                 </div>
               </div>
-            </Link>
+            </a>
           );
         })}
       </div>
