@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { Coins, Ghost, LayoutGrid, Terminal, HelpCircle, ShieldQuestionMark } from 'lucide-react';
+import { Coins, Ghost, LayoutGrid, Terminal, HelpCircle } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -10,10 +10,10 @@ const GAMES = [
   { id: 'math-trivia', title: 'Math Trivia', icon: Terminal, color: 'text-primary', path: '/tryyourmath-but-better' },
   { id: 'income-sim', title: 'Income Simulator', icon: Coins, color: 'text-secondary', path: '/income-simulator' },
   { id: 'tetris', title: 'Tetris', icon: LayoutGrid, color: 'text-primary', path: '/tetris' },
+  { id: 'cluguesstrivia', title: "ClueGuess Trivia", icon: HelpCircle, color: 'text-destructive', path: '/clueguess-trivia' },
   { id: 'casino', title: 'Cyber Casino', icon: Coins, color: 'text-secondary', path: '/casino-simulator' },
   { id: 'impostor', title: 'Impostor', icon: Ghost, color: 'text-destructive', path: '/imposter' },
-  { id: 'jeopardy', title: "MindVault Jeopardy", icon: HelpCircle, color: 'text-primary', path: '/mindvault-jeopardy' },
-  { id: 'cluguesstrivia', title: "ClueGuess Trivia", icon: ShieldQuestionMark, color: 'text-destructive', path: '/clueguess-trivia' }
+  { id: 'jeopardy', title: "MindVault Jeopardy", icon: HelpCircle, color: 'text-primary', path: '/mindvault-jeopardy' }
 ] as const;
 
 export function GamePortal() {
