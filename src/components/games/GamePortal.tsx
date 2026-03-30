@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { Coins, Ghost, LayoutGrid, Terminal, HelpCircle } from 'lucide-react';
+import { Coins, Ghost, LayoutGrid, Terminal, HelpCircle, ShieldQuestionMark } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -12,7 +12,8 @@ const GAMES = [
   { id: 'tetris', title: 'Tetris', icon: LayoutGrid, color: 'text-primary', path: '/tetris' },
   { id: 'casino', title: 'Cyber Casino', icon: Coins, color: 'text-secondary', path: '/casino-simulator' },
   { id: 'impostor', title: 'Impostor', icon: Ghost, color: 'text-destructive', path: '/imposter' },
-  { id: 'jeopardy', title: "MindVault Jeopardy", icon: HelpCircle, color: 'text-primary', path: '/mindvault-jeopardy' }
+  { id: 'jeopardy', title: "MindVault Jeopardy", icon: HelpCircle, color: 'text-primary', path: '/mindvault-jeopardy' },
+  { id: 'cluguesstrivia', title: "ClueGuess Trivia", icon: ShieldQuestionMark, color: 'text-destructive', path: '/clueguess-trivia' }
 ] as const;
 
 export function GamePortal() {
