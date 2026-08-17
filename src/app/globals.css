@@ -63,3 +63,7 @@
 .animate-glow {
   animation: pulse-glow 2s infinite;
 }
+
+#miguelimage {
+  height: 800px;
+}

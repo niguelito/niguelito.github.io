@@ -3,7 +3,6 @@
 import React from 'react';
 import { Coins, Ghost, LayoutGrid, Terminal, HelpCircle } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const GAMES = [
@@ -18,13 +17,13 @@ const GAMES = [
 
 export function GamePortal() {
   return (
-    <section id="games" className="container mx-auto px-4 py-24">
+    <section id="games" className="container mx-auto px-4 py-24 border-y border-white/5">
       <div className="mb-12 flex flex-col items-center justify-between gap-4 md:flex-row">
         <div>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            Game <span className="text-primary">Directory</span>
+            Games that <span className="text-primary">miguel</span> paid me to make
           </h2>
-          <p className="mt-2 text-muted-foreground">Select a portal to enter the digital realm.</p>
+          <p className="mt-2 text-muted-foreground">Select a portal to enter the digital realm, or some shitass ai text.</p>
         </div>
         <div className="flex gap-2">
           <div className="h-1 w-24 rounded-full bg-primary" />

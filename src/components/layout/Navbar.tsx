@@ -19,13 +19,13 @@ export function Navbar() {
           <Link href="#games" className="text-muted-foreground transition-colors hover:text-primary">
             Games
           </Link>
-          <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+          <Link href="#wedonthaveone" className="text-muted-foreground transition-colors hover:text-primary">
             Leaderboard
           </Link>
-          <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+          <Link href="#wedonthaveone" className="text-muted-foreground transition-colors hover:text-primary">
             Community
           </Link>
-          <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+          <Link href="#supporting" className="text-muted-foreground transition-colors hover:text-primary">
             Support
           </Link>
         </div>

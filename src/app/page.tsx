@@ -1,7 +1,9 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import { Navbar } from '@/components/layout/Navbar';
 import { GamePortal } from '@/components/games/GamePortal';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import { 
   ChevronRight, 
   PlayCircle, 
@@ -9,45 +11,42 @@ import {
   ShieldCheck, 
   Trophy, 
   Terminal, 
-  LayoutGrid 
+  LayoutGrid,
+  FileUser
 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {
+  const [showImage, setShowImage] = useState(false);
+
   return (
     <>
       <Navbar />
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32">
-          {/* Background Decorations */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl">
-            <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/20 blur-[120px] rounded-full" />
-            <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-secondary/10 blur-[100px] rounded-full" />
-          </div>
-
+        <section className="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32 bg-muted/10">
           <div className="container relative mx-auto px-4 text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary mb-8 animate-glow">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
               </span>
-              NIGUELITO HUB NOW LIVE
+              miguel lock tf in stop gambling
             </div>
 
             <h1 className="mx-auto max-w-4xl text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl font-headline">
-              Enter the <span className="text-primary italic">Niguelito</span> Digital Hub
+              Welcome the <span className="text-primary italic">Niguelito</span> Hub
             </h1>
             
             <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              A futuristic portal to the most engaging mini-games on the web. Explore your empire, master the arcade, and conquer the leaderboard.
+              I will create the best portal, and quite frankly, I have created the best gaming portal for the best games on the internet.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <Link href="#games">
                 <Button size="lg" className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-white neon-blue-glow rounded-xl">
-                  Explore Games
+                  Miguel stop gambling
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
@@ -58,10 +57,10 @@ export default function Home() {
 
             <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4 max-w-3xl mx-auto">
               {[
-                { label: 'Total Players', value: '12K+', icon: ShieldCheck },
-                { label: 'Games Active', value: '6', icon: PlayCircle },
-                { label: 'Daily Visits', value: '800+', icon: Trophy },
-                { label: 'Uptime', value: '99.9%', icon: Rocket },
+                { label: 'Miguel', value: '12', icon: ShieldCheck },
+                { label: 'Games Active', value: '6 or 7', icon: PlayCircle },
+                { label: 'Daily Visits', value: '14 i think', icon: Trophy },
+                { label: 'Uptime', value: '0%', icon: Rocket },
               ].map((stat, i) => (
                 <div key={i} className="flex flex-col items-center p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
                   <stat.icon className="h-5 w-5 text-primary mb-2" />
@@ -85,7 +84,7 @@ export default function Home() {
                   <Terminal className="h-6 w-6" />
                 </div>
                 <h3 className="text-xl font-bold font-headline">Performance Optimized</h3>
-                <p className="text-muted-foreground text-sm">Lightning fast navigation and minimal UI designed for pure focus on the gaming experience.</p>
+                <p className="text-muted-foreground text-sm">Idk if you have a potato it might not run, as it has some very complex image processing services to render miguel in his entirety.</p>
               </div>
               <div className="p-8 rounded-3xl bg-card border border-white/5 space-y-4">
                 <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
@@ -104,7 +103,39 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/*we dont have one lmao */}
+        <section className='py-60 border-y border-white/5 text-center' id="wedonthaveone">
+          <h1 className='mx-auto max-w-4xl text-2xl font-extrabold tracking-tight sm:text-6xl font-headline'>Whatever you're looking for</h1>
+          <p><br></br>we dont have one</p>
+          <p>Just play some games or something</p>
+        </section>
       </main>
+
+      <section className='py-60 border-y border-white/5 text-center bg-muted/70' id="supporting">
+        <h1 className='mx-auto max-w-4xl text-2xl font-extrabold tracking-tight sm:text-6xl font-headline'>If you're trying to support this work</h1>
+        <p><br></br>give miguel money hes paid me at least $30+ to build ts</p>
+      </section>
+
+      <section className='py-60 border-y border-white/5 text-center bg-muted/90 text-center'>
+        <h1 className='mx-auto max-w-4xl text-2xl font-extrabold tracking-tight sm:text-6xl font-headline'>Load a Picture of Miguel</h1>
+        <p><br></br>Loading a picture of Miguel takes around 6gb of ram.</p>
+        <p>This is because your computer essentially needs to render a celestial object.</p>
+        <br></br>
+        <p>Are you sure you want to load a picture of Miguel?</p>
+        <br></br>
+        <Link href="#miguelimage"><Button onClick={() => setShowImage(true)} size="lg" className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-white neon-blue-glow rounded-xl">I want to brick my computer</Button></Link>
+      
+        <br></br>
+
+        <div className='py-20 flex flex-center text-center'>{showImage && (
+            <img
+              id="miguelimage"
+              src="/MIGUEL.jpg"
+              alt="a massive picture of miguel"
+            />
+        )}</div>
+      </section>
 
       <footer className="border-t border-white/5 py-12 bg-background">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">

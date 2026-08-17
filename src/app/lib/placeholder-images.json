@@ -3,32 +3,44 @@
     {
       "id": "math-trivia",
       "description": "Mathematical symbols and abstract grid background",
-      "imageUrl": "https://picsum.photos/seed/math/600/400",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQngqIUN6XF8L-WA-bOCvQMDIxcSCQU4aX4TSslRZGJNaG63aNCLwsXE&s=10",
       "imageHint": "mathematics grid"
     },
     {
       "id": "income-sim",
       "description": "Financial charts and neon currency symbols",
-      "imageUrl": "https://picsum.photos/seed/finance/600/400",
+      "imageUrl": "https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds",
       "imageHint": "financial chart"
     },
     {
       "id": "tetris",
       "description": "Geometric falling blocks in neon colors",
-      "imageUrl": "https://picsum.photos/seed/tetris/600/400",
+      "imageUrl": "https://store-images.s-microsoft.com/image/apps.43965.14293896566208941.43b748ee-f8d7-499a-a6f3-0f017a95586c.6fd5d254-9eb0-4854-9f97-de2c2ee6ab06",
       "imageHint": "neon blocks"
     },
     {
       "id": "casino",
       "description": "Abstract slot machine or poker chips with glow",
-      "imageUrl": "https://picsum.photos/seed/casino/600/400",
+      "imageUrl": "https://www.inquirer.com/resizer/b1sD2-n1aUaZ2bkuEia099d4JaE=/arc-anglerfish-arc2-prod-pmn/public/KLTRXJW3EVBW5EC7R4FDQMCE34.jpg",
       "imageHint": "casino night"
     },
     {
       "id": "impostor",
       "description": "Futuristic space station corridor with red emergency lights",
-      "imageUrl": "https://picsum.photos/seed/space/600/400",
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/93GAa4wm3z4HbenzLbxWeQ.jpg",
       "imageHint": "spaceship corridor"
+    },
+    {
+      "id": "cluguesstrivia",
+      "description": "Horrible AI generated trivia but hey you can make your own trivia and export it!",
+      "imageUrl": "https://three-principles.com/wp-content/uploads/2018/10/Thought-matters.png",
+      "imageHint": "person thinking"
+    },
+    {
+      "id": "jeopardy",
+      "description": "AI Generated Jeopardy where you win",
+      "imageUrl": "https://static01.nyt.com/images/2020/11/08/arts/08trebek-appraisal1/merlin_174327987_a1c670d9-5398-4331-a233-582931787c1a-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+      "imageHint": "this shitass dude"
     }
   ]
 }
