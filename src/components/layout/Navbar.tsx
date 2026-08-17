@@ -28,6 +28,9 @@ export function Navbar() {
           <Link href="#supporting" className="text-muted-foreground transition-colors hover:text-primary">
             Support
           </Link>
+          <Link href="#loadmiguel" className='text-muted-foreground transition-colors hover:text-primary'>
+            Load a Picture of Miguel
+          </Link>
         </div>
 
         <div className="flex items-center gap-4">

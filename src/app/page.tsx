@@ -117,7 +117,7 @@ export default function Home() {
         <p><br></br>give miguel money hes paid me at least $30+ to build ts</p>
       </section>
 
-      <section className='py-60 border-y border-white/5 text-center bg-muted/90 text-center'>
+      <section className='py-60 border-y border-white/5 text-center bg-muted/90 text-center' id="loadmiguel">
         <h1 className='mx-auto max-w-4xl text-2xl font-extrabold tracking-tight sm:text-6xl font-headline'>Load a Picture of Miguel</h1>
         <p><br></br>Loading a picture of Miguel takes around 6gb of ram.</p>
         <p>This is because your computer essentially needs to render a celestial object.</p>
