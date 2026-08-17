@@ -124,20 +124,18 @@ export default function Home() {
         <br></br>
         <p>Are you sure you want to load a picture of Miguel?</p>
         <br></br>
-        <Link href="#miguelimage"><Button onClick={() => setShowImage(true)} size="lg" className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-white neon-blue-glow rounded-xl">I want to brick my computer</Button></Link>
+        <a href="/MIGUEL.jpg"
+              target="_blank"
+              rel="noopener noreferrer"><Button onClick={() => setShowImage(true)} size="lg" className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-white neon-blue-glow rounded-xl">I want to brick my computer</Button></a>
       
         <br></br>
 
         <div className='py-20 flex flex-center text-center'>{showImage && (
-            <a href="/MIGUEL.jpg"
-              target="_blank"
-              rel="noopener noreferrer">
               <img
                 id="miguelimage"
                 src={`/MIGUEL.jpg?miguel=${Date.now()}`}
                 alt="a massive picture of miguel"
               />
-            </a>
         )}</div>
       </section>
 
