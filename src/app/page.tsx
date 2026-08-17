@@ -129,11 +129,15 @@ export default function Home() {
         <br></br>
 
         <div className='py-20 flex flex-center text-center'>{showImage && (
-            <img
-              id="miguelimage"
-              src={`/MIGUEL.jpg?miguel=${Date.now()}`}
-              alt="a massive picture of miguel"
-            />
+            <a href="/MIGUEL.jpg"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                id="miguelimage"
+                src={`/MIGUEL.jpg?miguel=${Date.now()}`}
+                alt="a massive picture of miguel"
+              />
+            </a>
         )}</div>
       </section>
 
