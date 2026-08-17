@@ -131,7 +131,7 @@ export default function Home() {
         <div className='py-20 flex flex-center text-center'>{showImage && (
             <img
               id="miguelimage"
-              src="/MIGUEL.jpg"
+              src={`/MIGUEL.jpg?miguel=${Date.now()}`}
               alt="a massive picture of miguel"
             />
         )}</div>
